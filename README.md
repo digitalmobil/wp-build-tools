@@ -4,6 +4,7 @@
 [![](https://images.microbadger.com/badges/version/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own image badge on microbadger.com")
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/digitalmobil/wp-build-tools)
 
 
 # What is this?
