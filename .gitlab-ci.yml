@@ -14,6 +14,9 @@ build:image:
   stage: build
   only:
     - master
+  tags:
+    - shell-executor
+    - docker
   script:
     - docker build -t $BUILD_IMAGE wp-build
     - docker push $BUILD_IMAGE
@@ -22,6 +25,9 @@ release:image:
   stage: release
   only: 
     - master
+  tags:
+    - shell-executor
+    - docker
   script:
     - docker pull $BUILD_IMAGE
     - docker tag $BUILD_IMAGE $RELEASE_IMAGE
