@@ -45,6 +45,10 @@ RUN npm install -g bower sass grunt grunt-cli && \
 # Define working directory.
 WORKDIR /data
 
+RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
+    libfontconfig1-dev \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 COPY entrypoint.sh /entrypoint.sh
 # Define default command.
 CMD ["bash"]
