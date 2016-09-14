@@ -1,5 +1,6 @@
 # Wordpress Build Tools
 
+[![build status](https://git.dev-digitalmobil.com/dm-wordpress/wp-build-tools/badges/master/build.svg)](https://git.dev-digitalmobil.com/dm-wordpress/wp-build-tools/commits/master)
 [![](https://images.microbadger.com/badges/version/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own image badge on microbadger.com")
 
