@@ -1,6 +1,7 @@
 # Wordpress Build Tools
 
 [![](https://images.microbadger.com/badges/version/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own image badge on microbadger.com")
 
 # What is this?
 A docker image that contains all build tools required for building [dm-wordpress](https://www.digitalmobil.com) images.
