@@ -4,12 +4,12 @@
 A docker image that contains all build tools required for building [dm-wordpress](https://www.digitalmobil.com) images.
 
 Features:
-  * [composer]()
-  * [nodejs]() / [npm]()
-  * [sass]()
-  * [grunt]()
-  * [bower]()
-  * Uniformly use `/data` as the working directory for any of the tools
+  * [composer](https://getcomposer.org)
+  * [nodejs](https://nodejs.org) / [npm](https://npmjs.org)
+  * [grunt](https://gruntjs.com) / [grunt-cli](https://github.com/gruntjs/grunt-cli)
+  * [bower](https://bower.io)
+  * [sass](https://sass-lang.com)
+  * Uniformly use `/data` as the working directory for any of the tools above
   * Executing as non-privileged user `wp-build`
   * Preserving file permissions by adopting the `/data` dir owner's UID
 
@@ -17,9 +17,9 @@ Features:
 
 ## Installation
 
-```sh
-docker pull digitalmobil/wp-build-tools
-```
+    ```sh
+    docker pull digitalmobil/wp-build-tools
+    ```
 
 ## Usage
 
