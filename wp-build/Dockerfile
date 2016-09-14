@@ -39,8 +39,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 # Install Bower & Grunt
-RUN curl -L https://npmjs.org/install.sh | npm_install=3.10.3 sh && \
-    npm install -g bower sass grunt grunt-cli && \
+RUN pm install -g bower sass grunt grunt-cli && \
     echo '{ "allow_root": true }' > /root/.bowerrc
 
 # Define working directory.
