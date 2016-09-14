@@ -4,7 +4,7 @@ MAINTAINER tuschl@digitalmobil.com
 RUN adduser --gecos "" --disabled-password --home /home/wp-build wp-build
 
 RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
-    libpng-dev ssh sudo subversion git bzip2 zip unzip \
+    libfontconfig1-dev libpng-dev ssh sudo subversion git bzip2 zip unzip \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # gpg keys listed at https://github.com/nodejs/node
@@ -44,10 +44,6 @@ RUN npm install -g bower sass grunt grunt-cli && \
 
 # Define working directory.
 WORKDIR /data
-
-RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
-    libfontconfig1-dev \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY entrypoint.sh /entrypoint.sh
 # Define default command.
