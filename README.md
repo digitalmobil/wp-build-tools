@@ -3,7 +3,8 @@
 [![build status](https://git.dev-digitalmobil.com/dm-wordpress/wp-build-tools/badges/master/build.svg)](https://git.dev-digitalmobil.com/dm-wordpress/wp-build-tools/commits/master)
 [![](https://images.microbadger.com/badges/version/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/digitalmobil/wp-build-tools.svg)](http://microbadger.com/images/digitalmobil/wp-build-tools "Get your own image badge on microbadger.com")
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/kong.svg?maxAge=2592000)](https://hub.docker.com/r/digitalmobil/wp-build-tools/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)](https://hub.docker.com/r/digitalmobil/wp-build-tools/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/digitalmobil/wp-build-tools)
 
 
