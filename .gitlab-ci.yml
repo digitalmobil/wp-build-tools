@@ -1,0 +1,29 @@
+stages:
+  - build
+  - release
+
+variables:
+  BUILD_IMAGE: $CI_REGISTRY_IMAGE:master
+  RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+before_script:
+  - if test "x$(uname -s)" == "xDarwin"; then eval $(docker-machine env default); fi
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+
+build:image:
+  stage: build
+  only:
+    - master
+  script:
+    - docker build -t $BUILD_IMAGE wp-build
+    - docker push $BUILD_IMAGE
+
+release:image:
+  stage: release
+  only: 
+    - master
+  script:
+    - docker pull $BUILD_IMAGE
+    - docker tag $BUILD_IMAGE $RELEASE_IMAGE
+    - docker push $RELEASE_IMAGE
+
