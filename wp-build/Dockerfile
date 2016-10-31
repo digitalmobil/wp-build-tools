@@ -47,7 +47,7 @@ RUN npm install -g bower sass grunt grunt-cli && \
 # Define working directory.
 WORKDIR /data
 
-COPY entrypoint.sh /entrypoint.sh
+COPY wp-build/entrypoint.sh /entrypoint.sh
 
 # Define default command.
 CMD ["bash"]
