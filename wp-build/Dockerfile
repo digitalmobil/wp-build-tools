@@ -48,6 +48,7 @@ RUN npm install -g bower sass grunt grunt-cli && \
 WORKDIR /data
 
 COPY entrypoint.sh /entrypoint.sh
+
 # Define default command.
 CMD ["bash"]
 ENTRYPOINT ["/entrypoint.sh"]
