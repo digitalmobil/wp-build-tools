@@ -18,7 +18,7 @@ RUN set -ex \
   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8\
   B9AE9905FFD7803F25714661B63B535A4C206CA9\
   ; do \
-    gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+    gpg --keyserver pool.sks-keyservers.net --recv-keys "$key"; \
   done
 
 RUN  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
