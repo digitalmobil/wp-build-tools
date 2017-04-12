@@ -12,6 +12,7 @@ A docker image that contains all build tools required for building [dm-wordpress
 Features:
   * [composer](https://getcomposer.org)
   * [nodejs](https://nodejs.org) / [npm](https://npmjs.org)
+  * [yarn](https://yarnpkg.com)
   * [grunt](https://gruntjs.com) / [grunt-cli](https://github.com/gruntjs/grunt-cli)
   * [bower](https://bower.io)
   * [sass](https://sass-lang.com)
@@ -60,7 +61,13 @@ docker pull digitalmobil/wp-build-tools
     docker run --rm -v $(pwd):/data digitalmobil/wp-build-tools npm install
     ```
 
-3. Run grunt
+3. Run yarn
+
+    ```sh
+    docker run --rm -v $(pwd):/data digitalmobil/wp-build-tools yarn install
+    ```
+
+4. Run grunt
     
     ```sh
     docker run --rm -v $(pwd):/data digitalmobil/wp-build-tools grunt prod
