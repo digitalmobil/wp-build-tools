@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash --login
 
 DATA_UID=$(stat -c "%u" /data)
 
